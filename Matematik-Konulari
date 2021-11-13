@@ -1,0 +1,85 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int sayi1,sayi2,secim;
+float pi;
+
+
+int main(){
+
+
+pi=3.16;
+
+printf("Matematik Menusu\n");
+printf("*******************************\n\n");
+printf("1- Kare de alan ve cevre hesabi \n");
+printf("2- Girilen sayinin kupu \n");
+printf("3- Cember de alan ve cevre hesabi \n");
+printf("4- 5x2+7x+9 x e gore islemin sonucu \n");
+printf("5- Dikdortgen de alan ve cevre hesabi \n\n");
+printf("-> Isleminizi seciniz: ");
+scanf("%d",&secim);
+
+switch(secim){
+
+case 1: 
+		printf("\nKarenin kenar uzunlugu nedir: ");
+		scanf("%d",&sayi1);
+
+				printf("\nKarenin alani: %d\n",(sayi1*sayi1));
+				printf("Karenin cevresi: %d\n",(sayi1*4));
+				break;
+
+case 2: 
+		printf("\nKupunu bulmak istediginiz sayi: ");
+		scanf("%d",&sayi1);		
+		
+				printf("\nSayinin kupu: %d\n",(sayi1*sayi1*sayi1));
+				break;
+				
+case 3: 
+		printf("\nCemberin yaricap uzunlugu: ");
+		scanf("%d",&sayi1);
+				printf("\n Cemberin cevre hesabi:  %f\n",(pi*sayi1*sayi1));
+				printf("\n Cemberin alan hesabi:  %f",(2*pi*sayi1));
+
+case 4: 
+		printf("\nBir 'x' degeri giriniz: ");
+		scanf("%d",&sayi1);		
+		
+				printf("\nSonuc: %d",(5*sayi1*2+7*sayi1+9));
+				break;
+				
+case 5: 
+		printf("\nKisa kenar: ");
+		scanf("%d",&sayi1);
+
+		printf("\nUzun kenar: ");
+		scanf("%d",&sayi2);
+		
+				printf("\nDikdortgenin alani: %d",(sayi1*sayi2));
+				printf("\nDikdortgenin cevresi: %d",((sayi1*2)*(sayi2*2)));
+				break;
+
+
+}
+
+return 0;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
